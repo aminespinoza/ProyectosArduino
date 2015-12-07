@@ -16,9 +16,12 @@ void setup()
 
 void loop()
 {
+  //esto incluye solo dos ejes de movimiento
+  //eje horizontal
   int horizontalPosition = (analogRead(xAxis) / 5.7);
   horizontalEngine.write(horizontalPosition);
   
+  // eje vertical
   int verticalPosition = (analogRead(yAxis) / 5.7);
   verticalEngine.write(verticalPosition);
   
